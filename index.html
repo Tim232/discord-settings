@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord</title>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Discord Clone">
+    <meta property="og:title" content="Discord">
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAADxElEQVRYR+1XS0wTaxT+ZoaWabVUQN6Uh4XY+ojv5C50YUJu7uIaY4wujGI06EqjIo2Jj5WPGAsYjRu8JsbHSu8z92rie2GMMVEjC2kJVKBY5FlTCp0+mBnzj3bo0NIO2qsuPJu285//nO//zjnfP6XwyTbdEJkyt/MIROwDkBN9nuZPLyicc5dZTt7cTPEkNhVNcLDReRSieDzNCROHo6hjTQ2WE0oAdscwgNyvAgAYabJZ504FIH6l5FKaJptVYn+yBHbHDwDTMlCcl4kVC42YY9DAMxhEq3MUOpZBppaW6AyGBYQjAtYsz0ZxHouedxxevPahbyg0bVVVlcCgz8CGmgIU5GrRPxyWEpYXsVLyROYfn0CXhwObSaMkn0WnO4C/HwzAH5iIc1cFYOuvxVhcbZA2M4zcLqp6NRIRoNHQeOUcxfX/+mYOwGjIwJHdVaBnljcukSACJy92wudXspCSgV9W56Hmp/TIwr2nw7jzhMjMpKUEcHiXGTlGjSq6Uzl5fRGc+s2lHgDp+vrtlXFxQ2EBbweCKC1g5QmIOo0FeAx6Qygr0iEjQb80X+lSTEVSBtasyMH6tfkKAFyQR/PVbrwfjSA7S4P62gp5Gobeh3H+eg+4EA9TIYs9W8rBTGmefx4N4vELrxwzKQDS/UstWQoAre1+XPvXIz/btq4ES+Z/nJCHz0Zw+/GQvLZ/W4XEUqxNnYakAAj9pAyxRk7ZeLkLvCBKp2vYUYm8bK3k0uEeR8uNXum7XsfgcJ1Z0oJYI6JEyhC1pACO76lOKDY9fRzaXGNYYJ6N8mKdIoHjzRjI+jJrFgpyleCJIynhsQsd6gDYGyzyLUX0meN46WQzMdIPWg0t9wKJY2t0qgNg21GpOAWhj5ywvEiHeSZ9UnFyv+Pg6g2gslSPihiWBkZCsF9WWQLDrAyQRjSb9DJiomgv23z46/4ASgtZ5OdooWcZ0DSFcY6H1xdGb38QRMBWLTIqRpEAInJM7gpVPUCciAJbzbOxcqFROgkpwaU/eqULJplVlelRt9GEQJBHt4fD89c+OFxjmHrVplTCmdT7c3x/APguGSDdpVSXzynu5J5+AMbpYsYx0GB3XBGB2i/LqdjtF2lhAyXQfwJQXiyJXssPnXYZJ5jw7wBq0gWCAtYKtOCjBPouAOmPyLQ6EF042NhuoUShMB0geIbuOFs/32M701YtUPQDQDSlBJCOxIliHGhuL6F54RaAJWQ9rgf+r8Sxcfee78jShCZuUsDP3wQAAbO75bnGMDqrpclm3Ul+fwCF65kwy+AsFwAAAABJRU5ErkJggg==">
+    <script src="https://cdn.jsdelivr.net/npm/devtools-detect@3.0.1/index.js"></script>
+</head>
+<body class="dark">
+    <div id="container">
+        <div class="title">
+            <h2>알림</h2>
+        </div>
+        <div class="settings">
+            <div class="checkbox-container">
+                <label for="notification" class="checkbox-title">PC 알림 활성화</label>
+                <input type="checkbox" id="notification" class="discord-checkbox"><label for="notification" class="discord-label"><span></span></label>
+            </div>
+            <div class="description">특정채널 또는 서버에서 알림을 받고 싶으시다면 원하는 서버를 오른쪽 클릭하고 알림 설정을 선택하기.</div>
+            <div class="margin"></div>
+        </div>
+        <div class="settings sortation">
+            <div class="checkbox-container">
+                <label for="message-badge" class="checkbox-title">읽지 않은 메시지 배지 활성화하기</label>
+                <input type="checkbox" id="message-badge" class="discord-checkbox"><label for="message-badge" class="discord-label"><span></span></label>
+            </div>
+            <div class="description">읽지 않은 메시지가 있을 때 앱 아이콘에 붉은 배지가 표시돼요.</div>
+            <div class="margin"></div>
+        </div>
+        <div class="title">
+            <h5 class="display-title">비활성화 시간 제한 푸시 알림</h5>
+        </div>
+        <div class="settings">
+            <div class="select-description">컴퓨터로 Discord를 사용 중일 때는 휴대 기기에 푸시 알림을 보내지 않아요.
+                이 설정을 사용하면 푸시 알림이 발송되기 전에 비활성화 상태까지 걸리는 시간을 조절할 수 있어요.</div>
+        </div>
+        <div class="title">
+            <h5 class="display-title">테마</h5>
+        </div>
+        <div class="display">
+            <div class="display-container">
+                <input type="checkbox" id="dark-btn" class="display-discord-checkbox"><label for="dark-btn" class="display-discord-label"><span>어두운 테마</span></label>
+            </div>
+            <div class="display-container">
+                <input type="checkbox" id="light-btn" class="display-discord-checkbox"><label for="light-btn" class="display-discord-label"><span>밝은 테마</span></label>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
